@@ -96,7 +96,7 @@
 % \printname is used to output the user's name in a large size
 \newcommand{\printname}{
 	\begingroup
-		\hfil{\MakeUppercase{\Large\bfseries\name}}\hfil % Style and output the user's name
+		\hfil{\MakeUppercase{\large\bfseries\name}}\hfil % Style and output the user's name
             %\bigskip
 		\break % Vertical whitespace below name
 	\endgroup
@@ -129,6 +129,8 @@
 		\setlength{\leftmargin}{0em} % Indent to the left of the list
 	}
 	\item[] % Empty list item to enable indentation
+}{
+\end{list}
 }
 
 %----------------------------------------------------------------------------------------
@@ -144,6 +146,7 @@
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		\item[] % Empty list item to enable indentation
 }{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
@@ -161,6 +164,7 @@
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		\item[] % Empty list item to enable indentation
 }{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
@@ -180,6 +184,7 @@
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		\item[] % Empty list item to enable indentation
 }{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list

@@ -22,7 +22,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	a4paper, % Uncomment for A4 paper size (default is US letter)
 	11pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
@@ -85,7 +85,16 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
+%------------------------------------------------
 
+    \begin{rSubsection}{Thales}{August 2022 - December 2022}{Software Engineer}{Vienna, Austria}
+        Involved in the support of TAS Control Platform (safety-critical fault-tolerant platform) as part 
+        of Thales Railway Signalling Solutions team. Contributed fixes towards TAS control platform NTP/Chrony time 
+        synchronization implementation and focused on TAS Core OS/Target handling work.
+		
+    \end{rSubsection}
+
+%------------------------------------------------
 	\begin{rSubsection}{KAI (Kompetenzzentrum Automobil- und Industrieelektronik), Infineon}{October 2021 - June 2022}{Master thesis student}{Villach, Austria}
 
             {\color{orange} Zephyr RTOS: Design of a Deterministic Ethernet Network for Machine-to-Machine (M2M) Communications}: Thesis involve (i) writing complete XMC4 ethernet driver for Zephyr RTOS, supporting IEEE1588(PTP), VLAN tagging and DMA operations. (ii) Implementing timer, counter, clock and other peripheral driver and devicetrees of XMC for Zephyr (iii) Integrating network stacks like UDP, TCP, MQTT and MQTT-SN of Zephyr with ethernet (iv) integrating gPTP Zephyr stack for network time synchronization (IEEE 802.1AS) (v) Implementing real-time traffic shaping algorithms based on IEEE 802.1Qav (credit-based stream reservation) and investigate feasibility of IEEE802.1Qbv on XMC4.
@@ -119,11 +128,11 @@
 	\begin{rSubsection}{Hewlett-Packard Enterprise}{October 2018 - July 2019}{Firmware Engineer II}{India}
             Part of a dedicated 3-member team responsible for maintaining and do feature addition for firmware of HPE Apollo Gen10 server chassis controller (part of Baseboard Management Controller). Tasks include maintaining communication in RTOS via I2C, SPI etc., modifying cooling (fan/PWM), power regulation (PID controller) and BSP for new firmware requirements.
             %\hspace{1em} % Vertical whitespace after the end of the list
-            \break \break
+            %\break \break
 
             [server] Instant Power Reporting - MQTT Daemon: Designed and implemented an MQTT daemon (using PowerPC cross-compiled mosquitto libs) on Linux initrd. This daemon exposed a very simple universal interface to communicate over TCP/IP (ethernet). Periodically reporting power(instant) events from the server tray controller to the central Power management unit(dashboard) was a use-case. It made use of both Apache Avro and JSON format as payloads.
             %\vspace{1em} % Vertical whitespace after the end of the list
-            \break \break
+            %\break \break
             
             Maintain firmware/state-machine of on-board chassis MegaCell (battery) on Smart-Array-Controller for HPE
 Apollo Gen10 servers.
@@ -135,17 +144,17 @@ Apollo Gen10 servers.
 	\begin{rSubsection}{AllGo Embedded Systems, Visteon Corp.}{July 2016 - Oct 2018}{Embedded Software Engineer}{India}
             Part of multimedia and connectivity team responsible for requirement gathering, developing, documenting and bug fixing of the Embedded Linux based automotive multimedia stack as well as the connectivity stack for Tier1 automotive OEM companies.
             %\hspace{1em} % Vertical whitespace after the end of the list
-            \bigskip\break
+            %\bigskip\break
 
             Designed and Implemented WiFiPlugin for Wireless CarPlay and AndroidAuto device detection and connection. The library implementation made use of DNS-SD (Bonjour) protocol for service discovery and Hostapd for Wireless Access point management in Embedded Linux. (TATA Q5 Infotainment project) \hfill
             %\vspace{1em} % Vertical whitespace after the end of the list
-            \bigskip\break
+            %\bigskip\break
             
             Enabled direct playback from Android phone without using a device-driver: Removed complete device-driver dependency for MTP device read/write from MTP library(libmtp/linux) and redirect them into direct user-space(libusb) operations as part of AOSP project. Also implemented buffering feature for reducing read-latency and thus smooth audio playback music playback from MTP device. (Mitsubishi Infotainment project) \hfill
-            \bigskip\break
+            %\bigskip\break
 
             Design and implementation of Automotive MediaPlayer WAMP-C++ Binder layer (autobahn-cpp/bonefish) on top of CommonAPI(C++) layer for streamlining communication over JavaScript and C++. This implementation provides direct RPC calls as JSON message formats from WebInterface(JavaScript) to the underlying stack (CommonAPI/C++).
-            \bigskip\break
+            %\bigskip\break
 
             Created and optimised gstreamer pipelines as part of codec/container validation on Renesas/imx platform and implemented audio-book/podcast support for embedded Sqlite3 based mediaplayer in C.
 
