@@ -29,6 +29,21 @@
 
 \usepackage{ebgaramond} % Use the EB Garamond font
 \usepackage{fontawesome5}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    %pdftitle={Overleaf Example},
+    %pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\usepackage{graphicx}
+\graphicspath{ {./} }
 %------------------------------------------------
 
 \name{Sebin Shaji Philip} % Your name to appear at the top
@@ -58,7 +73,7 @@
 
         Courses: Real-time OS and middleware, Low power wireless networking for IoT, Robot planning and its applications. Research project on implementing Nonvolatile processor architecture (NVP for energy harvesters) on RISC-V core (ibex). (Minor: Entrepreneurship for Engineers, Business Development Lab)
     
-        {\color{orange}\emph{Intermittent Computing Emulation of Ultra-Low-Power Processors: Evaluation of Backup Strategies for RISC-V} - IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, April 20, 2022}.
+        {\color{orange}\emph{Intermittent Computing Emulation of Ultra-Low-Power Processors: Evaluation of Backup Strategies for RISC-V} - IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, April 20, 2022} \href{https://ieeexplore.ieee.org/document/9760506}{[view]}.
     \end{rSubsection}
 
     \begin{rSubsection6}{KTH Royal Institute of Technology}{September 2019 - July 2022}{Master of Science in Embedded Systems}{Stockholm, Sweden}{Armada Career Host}{EIT Digital Excellent Scholarship (C1)}
@@ -71,7 +86,7 @@
         Courses: Digital Systems Design, Operating Systems and Network Programming, Data Structures and Algorithms, Microprocessor and Interfacing, High Performance Microprocessors, Digital Signal Processing, Distributed Systems, Digital Image Processing, Computer Graphics, Unix Systems Programming.\hfill
         \bigskip\break
         {\color{orange}[Thesis] Entity Level Contextual Sentiment Detection of Topic Sensitive Influential Twitterers using SentiCircles. \break
-        IC3T Springer Journal: Published in 2016 \hfill \break
+        IC3T Springer Journal: Published in 2016 \href{https://link.springer.com/chapter/10.1007/978-981-10-3223-3\_19}{[view]}\hfill \break
         Best project: Computer Society of India 5th In-App award} \hfill
 
     
@@ -98,7 +113,8 @@
 %------------------------------------------------
 	\begin{rSubsection}{KAI (Kompetenzzentrum Automobil- und Industrieelektronik), Infineon}{October 2021 - June 2022}{Master thesis student}{Villach, Austria}
 
-            {\color{orange} Zephyr RTOS: Design of a Deterministic Ethernet Network for Machine-to-Machine (M2M) Communications}: Thesis involve (i) writing complete XMC4 ethernet driver for Zephyr RTOS, supporting IEEE1588(PTP), VLAN tagging and DMA operations. (ii) Implementing timer, counter, clock and other peripheral driver and devicetrees of XMC for Zephyr (iii) Integrating network stacks like UDP, TCP, MQTT and MQTT-SN of Zephyr with ethernet (iv) integrating gPTP Zephyr stack for network time synchronization (IEEE 802.1AS) (v) Implementing real-time traffic shaping algorithms based on IEEE 802.1Qav (credit-based stream reservation) and investigate feasibility of IEEE802.1Qbv on XMC4.
+            {\color{orange} Zephyr RTOS: Design of a Deterministic Ethernet Network for Machine-to-Machine (M2M) Communications}\href{https://www.linkedin.com/in/sebinsphilip/overlay/1635506986689/single-media-viewer/?type=DOCUMENT&profileId=ACoAAAm-xe0BCYwezV-q9pIlhl7WYDQHRff8kIE}{[view]}: Thesis involve (i) writing complete XMC4 ethernet driver for Zephyr RTOS, supporting IEEE1588(PTP), VLAN tagging and DMA operations. (ii) Implementing timer, counter, clock and other peripheral driver and devicetrees of XMC for Zephyr (iii) Integrating network stacks like UDP, TCP, MQTT and MQTT-SN of Zephyr with ethernet (iv) integrating gPTP Zephyr stack for network time synchronization (IEEE 802.1AS) (v) Implementing real-time traffic shaping algorithms based on IEEE 802.1Qav (credit-based stream reservation) and investigate feasibility of IEEE802.1Qbv on XMC4.
+            \href{https://github.com/sebinsphilip/zephyr\_xmc}{ See code here.}
 		
 	\end{rSubsection}
 
@@ -164,6 +180,7 @@ Apollo Gen10 servers.
 
 	\begin{rSubsection}{QBurst Technologies}{May 2015 - June 2015}{Intern}{India}
             Designed and developed iOS app to calculate dimensions of an object (length x width) using iPhone camera in Objective-C.
+            \href{https://github.com/sebinsphilip/The\_Dimension\_Tool} {See code here.}
 
 	\end{rSubsection}
  
@@ -193,12 +210,16 @@ Workbench, Quartus Prime, ModelSim, Altera NiosII Qsys, MATLAB \\
 \begin{rSection}{Projects}
 
 	%Section content\ldots
-        \item {[UniTrento]} Course project of ‘Low power wireless networking for IoT’, for developing ‘Time Synchronization and Periodic Data Collection’ protocol on Contiki OS. Task involve developing time synchronized period data collection for wireless network nodes (with efficient duty-cycling for achieving low power – MAC layer), generating routing topology, scheduling transmissions and wakeups etc.
-        \item {[KTH]} Parallel Multi-core (5-cores) implementation of Edge detection filters (Image processing) on Altera Nios II FPGA using bare metal and uCOS-II RTOS. Throughput requirement of 320 images per second (32x32 pixels). Involved Design space exploration of different actors and mapping different tasks on multiple processors considering real-time (deadline) requirements and utilizing parallel programming constructs.
-        \item {[KTH]} Implemented efficient Vedic multipliers on FPGA for high performance cryptographic applications. {[vhdl]}
+        \item {[UniTrento]} Course project of ‘Low power wireless networking for IoT’, for developing ‘Time Synchronization and Periodic Data Collection’ protocol on Contiki OS. Task involve developing time synchronized period data collection for wireless network nodes (with efficient duty-cycling for achieving low power – MAC layer), generating routing topology, scheduling transmissions and wakeups etc.\href{https://github.com/sebinsphilip/LowPowerWN\_IOT}{ [view]}
+        \item {} \href{https://github.com/sebinsphilip/zephyr\_xmc}{Master thesis code repo}, which contains the out-of-tree drivers developed for the thesis. The main ethernet driver code can be found \href{https://github.com/sebinsphilip/zephyr\_xmc/tree/main/drivers/zephyr/ethernet}{here}.
+        \item {} A simple POSIX shell implemented using a state machine \href{https://github.com/sebinsphilip/matician\_shell}{[view]}.
+        \item {} HackerRank and IEEE Xtreme coding challenges \href{https://github.com/sebinsphilip/coding\_challenge}{[view]}.
+        \item {[KTH]} Parallel Multi-core (5-cores) implementation of Edge detection filters (Image processing) on Altera Nios II FPGA using bare metal and uCOS-II RTOS. Throughput requirement of 320 images per second (32x32 pixels). Involved Design space exploration of different actors and mapping different tasks on multiple processors considering real-time (deadline) requirements and utilizing parallel programming constructs. \href{https://github.com/sebinsphilip/Embedded\_software\_lab} {[view]}
+        \item {[KTH]} Implemented efficient Vedic multipliers on FPGA for high performance cryptographic applications. \href{https://github.com/sebinsphilip/vedic\_multiplier\_kth\_writing\_course}{[view]}
         \item {[hobby-project]} Implemented gstreamer based music playback application on Linux. The Linux userspace music player opened and played an OGG file in PC to alsasink by creating a filesrc-oggdemux- vorbisdec-alsasink pipeline in Gstreamer.
-        \item {[hobby-project]} Basic USB device driver to read/write to bulk endpoint as part of Device driver study.
-        \item {[hobby-project]} Multi-client (with username) supported TCP chat server as part of Socket programming study.
+        \href{https://github.com/sebinsphilip/gstreamer\_applications}{[view]}
+        \item {[hobby-project]} Basic USB device driver to read/write to bulk endpoint as part of Device driver study. \href{https://github.com/sebinsphilip/device\_drivers}{[view]}
+        \item {[hobby-project]} Multi-client (with username) supported TCP chat server as part of Socket programming study. \href{https://github.com/sebinsphilip/sockets}{[view]}
 
 \end{rSection}
 
@@ -208,12 +229,36 @@ Workbench, Quartus Prime, ModelSim, Altera NiosII Qsys, MATLAB \\
 %	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{References}
+\begin{rSection}{LANGUAGE}
 %\centering (Available upon request)
 	%Section content\ldots
-
+    \item {ENGLISH (CEFR C1 Level): } [IELTS Jan 2019] Listening(8) Reading(8.5) Writing(7) Speaking(7.5), Overall (8/9)
+    \item {GERMAN (CEFR A1 Level) : }  Overall (48/60) 
+    \item {MALAYALAM              : } Native or bilingual proficiency
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%	SAMPLES OF WORK
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{CONTACT INFORMATION}
+    \centering 
+        %Section content\ldot
+        \begin{tabular}[t]{m{3.5cm} m{14cm}}
+        Sebin Shaji Philip,
+        Kuruvanthanam (House),
+        Paingana,
+        Mundakayam P.O.,
+        Kottayam, Kerala
+        India,
+        PIN: 686513 & \includegraphics[width=3.5cm, height=4cm]{dp}
+        \end{tabular}
+        
+        
+    \end{rSection}
+    
+    %----------------------------------------------------------------------------------------
+    
 \end{document}
